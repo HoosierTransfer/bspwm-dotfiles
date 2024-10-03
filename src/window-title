@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+wnd_focus=$(xdotool getwindowfocus)
+wnd_title=$(xprop -id $wnd_focus WM_NAME)
+lookfor='"(.*)"'
+
+
+if [[ "$wnd_title" =~ $lookfor ]]; then
+  wnd_title=${BASH_REMATCH[1]}
+  result=$(echo $wnd_title | ~/.local/bin/cutlet)
+  echo $result
+else
+  echo "No window"
+fi
