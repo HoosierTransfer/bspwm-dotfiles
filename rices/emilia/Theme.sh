@@ -18,7 +18,7 @@ read -r RICE < "$HOME"/.config/bspwm/.rice
 
 # Vars config for Emilia Rice
 # Bspwm border		# Fade true|false	# Shadows true|false	# Corner radius		# Shadow color
-BORDER_WIDTH="0"	P_FADE="true"		P_SHADOWS="true"		P_CORNER_R="6"		SHADOW_C="#000000"
+BORDER_WIDTH="2"	P_FADE="true"		P_SHADOWS="true"		P_CORNER_R="0"		SHADOW_C="#000000"
 
 # (Tokyo Night) colorscheme
 bg="#1a1b26"  fg="#c0caf5"
@@ -232,7 +232,7 @@ EOF
 launch_theme() {
 
 	# Set random wallpaper for actual rice
-	feh --no-fehbg --bg-fill "${HOME}"/.config/bspwm/rices/"${RICE}"/walls/blue_sea_refuge_by_tryingtofly_daz1nxp.webp
+	feh --no-fehbg --bg-fill "${HOME}"/.config/bspwm/rices/"${RICE}"/walls/aaaaaaaa.png
 
 	# Launch dunst notification daemon
 	dunst -config "${HOME}"/.config/bspwm/dunstrc &
