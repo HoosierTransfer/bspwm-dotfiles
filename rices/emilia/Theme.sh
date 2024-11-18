@@ -20,14 +20,13 @@ read -r RICE < "$HOME"/.config/bspwm/.rice
 # Bspwm border		# Fade true|false	# Shadows true|false	# Corner radius		# Shadow color
 BORDER_WIDTH="2"	P_FADE="true"		P_SHADOWS="true"		P_CORNER_R="0"		SHADOW_C="#000000"
 
-# (Tokyo Night) colorscheme
-bg="#1a1b26"  fg="#c0caf5"
+bg="#141414"  fg="#dedede"
 
-black="#15161e"   red="#f7768e"   green="#9ece6a"   yellow="#e0af68"
-blackb="#414868"  redb="#f7768e"  greenb="#9ece6a"  yellowb="#e0af68"
+black="#15161e"   red="#d73f52"   green="#5abf8d"   yellow="#e0ae57"
+blackb="#414868"  redb="#d73f52"  greenb="#5abf8d"  yellowb="#e0ae57"
 
-blue="#7aa2f7"   magenta="#bb9af7"   cyan="#7dcfff"   white="#a9b1d6"
-blueb="#7aa2f7"  magentab="#bb9af7"  cyanb="#7dcfff"  whiteb="#c0caf5"
+blue="#5cb0ec"   magenta="#b396e8"   cyan="#1dbec5"   white="#bebebe"
+blueb="#5cb0ec"  magentab="#b396e8"  cyanb="#1dbec5"  whiteb="#dedede"
 
 # Set bspwm configuration
 set_bspwm_config() {
@@ -187,7 +186,7 @@ set_dunst_config() {
 set_eww_colors() {
 	cat >"$HOME"/.config/bspwm/eww/colors.scss <<EOF
 \$bg: ${bg};
-\$bg-alt: #222330;
+\$bg-alt: #262626;
 \$fg: ${fg};
 \$black: ${blackb};
 \$red: ${red};
@@ -205,7 +204,7 @@ set_launchers() {
 	sed -i "$HOME"/.config/bspwm/jgmenurc \
 		-e "s/color_menu_bg = .*/color_menu_bg = ${bg}/" \
 		-e "s/color_norm_fg = .*/color_norm_fg = ${fg}/" \
-		-e "s/color_sel_bg = .*/color_sel_bg = #222330/" \
+		-e "s/color_sel_bg = .*/color_sel_bg = #262626/" \
 		-e "s/color_sel_fg = .*/color_sel_fg = ${fg}/" \
 		-e "s/color_sep_fg = .*/color_sep_fg = ${blackb}/"
 
@@ -216,7 +215,7 @@ set_launchers() {
 * {
     font: "JetBrainsMono NF Bold 9";
     background: ${bg};
-    bg-alt: #222330;
+    bg-alt: #262626;
     background-alt: ${bg}E0;
     foreground: ${fg};
     selected: ${blue};

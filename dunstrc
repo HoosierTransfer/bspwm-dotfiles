@@ -19,14 +19,14 @@ separator_height = 2
 padding = 8
 horizontal_padding = 11
 frame_width = 6
-frame_color = "#1a1b26"
-separator_color = "#bb9af7"
+frame_color = "#141414"
+separator_color = "#b396e8"
 
 font = JetBrainsMono NF Medium 9
 
 line_height = 0
 markup = full
-format = "<span size='x-large' font_desc='Cantarell 9' weight='bold' foreground='#7aa2f7'>%s</span>\n%b"
+format = "<span size='x-large' font_desc='Cantarell 9' weight='bold' foreground='#5cb0ec'>%s</span>\n%b"
 alignment = center
 
 idle_threshold = 120
@@ -54,15 +54,15 @@ mouse_right_click = close_all
 
 [urgency_low]
 timeout = 3
-background = "#1a1b26"
-foreground = "#9ece6a"
+background = "#141414"
+foreground = "#5abf8d"
 
 [urgency_normal]
 timeout = 5
-background = "#1a1b26"
-foreground = "#a9b1d6"
+background = "#141414"
+foreground = "#bebebe"
 
 [urgency_critical]
 timeout = 0
-background = "#1a1b26"
-foreground = "#f7768e"
+background = "#141414"
+foreground = "#d73f52"
